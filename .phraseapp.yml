@@ -1,0 +1,14 @@
+phraseapp:
+    access_token: 80f8b1dad85f80657086ca36649191bb7de731b13293c52421ea4888b5d48e49
+    project_id: 5092d10a50efbcdb78684023d60c0f91
+    push:
+      sources:
+      - file: ./ICE-Scarlet/<locale_code>.yml
+        params:
+          file_format: strings
+          update_translations: true
+    pull:
+      targets:
+      - file: ./quote/<locale_code>.yml
+        params:
+          file_format: strings
